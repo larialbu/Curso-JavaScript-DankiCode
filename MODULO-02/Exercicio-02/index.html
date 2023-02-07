@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var anoNasc = prompt('informe o ano do seu nascimento:')
+        /* if(anoNasc >= 2020){
+            alert('indorme seu ano corretamente')
+        } */
+        while(anoNasc >= 2020){
+            alert('indorme seu ano corretamente')
+            anoNasc = prompt('informe o ano do seu nascimento:')
+        }
+
+        var anoAtual = prompt('que ano estamos?')
+        if(anoAtual > 2023){
+            alert('nao estamos nesse ano!')
+        }
+        var idadeFinal = anoAtual - anoNasc;
+
+        document.write(idadeFinal);
+    </script>
+</body>
+</html>
