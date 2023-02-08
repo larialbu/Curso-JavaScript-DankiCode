@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function Pessoa(){
+            this.nome = 'larissa';
+            this.idade = 18;
+            this.printNome = function(name){
+                alert(name);
+            }
+            this.returnAnimal = function(animal){
+                return animal;
+            }
+        }
+
+        function Animal(){
+            this.nome = 'cachorro';
+            this.race = 'bulldog';
+        }
+        
+
+        var pessoa = new Pessoa();
+        var animal = new Animal();
+
+        alert(pessoa.returnAnimal(animal).nome);
+        /* function Animal(nome, peso){
+            if(nome == undefined){
+                nome = 'cachorro';
+            }
+
+            if(peso == undefined){
+                peso = '8kg'
+            }
+            this.nome = nome;
+            this.peso = peso;
+        }
+
+        animal = new Animal('gato');
+
+        alert(animal.nome)
+        alert(animal.peso) */
+
+
+        /* animal1 = new Animal('cachorro','12kg');
+        animal2 = new Animal('gato','7kg');
+
+        alert(animal1.nome);
+        alert(animal2.peso);
+ */
+
+        /* var pessoa = new Pessoa();
+        var pessoa2 = new Pessoa();
+
+        pessoa2.nome = 'joao';
+
+        pessoa.printNome(pessoa2.nome) */
+    </script>
+</body>
+</html>
