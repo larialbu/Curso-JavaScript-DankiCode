@@ -1,0 +1,94 @@
+<html>
+    <body>
+        <style>
+            .conteudo h2 span{
+                font-size: 14px;
+                cursor: pointer;
+            }
+            .conteudo p{
+                overflow: hidden;
+                height: 10px;
+                transition: 2s;
+            }
+            .mostrar{
+                height: 200px !important;
+            }
+        </style>
+        <div  class="conteudo">
+            <h2>Titulo do conteudo <span id="s1">Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices vitae
+                 neque fringilla semper. Nullam convallis pulvinar nisi, sit amet venenatis 
+                 felis. Praesent malesuada semper ipsum vitae aliquet. Aenean sagittis
+                  convallis odio, at posuere tortor aliquet vitae. Ut eget massa quam. Mauris
+                   vel congue tortor. Integer congue quis urna vel elementum. Pellentesque 
+                   aliquet consequat leo, a dictum mi mattis in.Vivamus ac auctor nisi.
+                    Aenean molestie turpis nibh. Praesent tincidunt lacinia enim, eget
+                     blandit odio sagittis commodo. Ut eget accumsan sem. Vestibulum cursus
+                      elit vitae urna maximus, vitae ornare ex gravida. Vestibulum purus mi,
+                       eleifend id eleifend nec, malesuada eget felis. Suspendisse pretium
+                        vulputate enim, sollicitudin elementum eros mattis eget. Integer at
+                         auctor neque, sed fermentum eros.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Titulo do conteudo <span id="s2" >Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices vitae
+                 neque fringilla semper. Nullam convallis pulvinar nisi, sit amet venenatis 
+                 felis. Praesent malesuada semper ipsum vitae aliquet. Aenean sagittis
+                  convallis odio, at posuere tortor aliquet vitae. Ut eget massa quam. Mauris
+                   vel congue tortor. Integer congue quis urna vel elementum. Pellentesque 
+                   aliquet consequat leo, a dictum mi mattis in.Vivamus ac auctor nisi.
+                    Aenean molestie turpis nibh. Praesent tincidunt lacinia enim, eget
+                     blandit odio sagittis commodo. Ut eget accumsan sem. Vestibulum cursus
+                      elit vitae urna maximus, vitae ornare ex gravida. Vestibulum purus mi,
+                       eleifend id eleifend nec, malesuada eget felis. Suspendisse pretium
+                        vulputate enim, sollicitudin elementum eros mattis eget. Integer at
+                         auctor neque, sed fermentum eros.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Titulo do conteudo <span id="s3">Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices vitae
+                 neque fringilla semper. Nullam convallis pulvinar nisi, sit amet venenatis 
+                 felis. Praesent malesuada semper ipsum vitae aliquet. Aenean sagittis
+                  convallis odio, at posuere tortor aliquet vitae. Ut eget massa quam. Mauris
+                   vel congue tortor. Integer congue quis urna vel elementum. Pellentesque 
+                   aliquet consequat leo, a dictum mi mattis in.Vivamus ac auctor nisi.
+                    Aenean molestie turpis nibh. Praesent tincidunt lacinia enim, eget
+                     blandit odio sagittis commodo. Ut eget accumsan sem. Vestibulum cursus
+                      elit vitae urna maximus, vitae ornare ex gravida. Vestibulum purus mi,
+                       eleifend id eleifend nec, malesuada eget felis. Suspendisse pretium
+                        vulputate enim, sollicitudin elementum eros mattis eget. Integer at
+                         auctor neque, sed fermentum eros.</p>
+        </div>
+        <div class="conteudo">
+            <h2>Titulo do conteudo <span id="s4">Ver mais!</span></h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc ultrices vitae
+                 neque fringilla semper. Nullam convallis pulvinar nisi, sit amet venenatis 
+                 felis. Praesent malesuada semper ipsum vitae aliquet. Aenean sagittis
+                  convallis odio, at posuere tortor aliquet vitae. Ut eget massa quam. Mauris
+                   vel congue tortor. Integer congue quis urna vel elementum. Pellentesque 
+                   aliquet consequat leo, a dictum mi mattis in.Vivamus ac auctor nisi.
+                    Aenean molestie turpis nibh. Praesent tincidunt lacinia enim, eget
+                     blandit odio sagittis commodo. Ut eget accumsan sem. Vestibulum cursus
+                      elit vitae urna maximus, vitae ornare ex gravida. Vestibulum purus mi,
+                       eleifend id eleifend nec, malesuada eget felis. Suspendisse pretium
+                        vulputate enim, sollicitudin elementum eros mattis eget. Integer at
+                         auctor neque, sed fermentum eros.</p>
+        </div>
+        <script>
+            var span = document.querySelector('.conteudo span');
+
+            span.addEventListener('click',function(){
+                var conteudo = document.querySelector('.conteudo p');
+
+                if(conteudo.classList.contains('mostrar')){
+                    span.innerHTML = 'Ver mais...'
+                    conteudo.classList.remove('mostrar')
+                }else{
+                    span.innerHTML = 'Ocutar Tudo...'
+                    conteudo.classList.add('mostrar')
+                }
+            });
+            
+        </script>
+    </body> 
+</html>
