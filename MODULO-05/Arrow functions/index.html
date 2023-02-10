@@ -1,0 +1,31 @@
+<html>
+    <body>
+        <script>
+            function testes(){
+
+            }
+            //ou
+            const testes1 = (par)=>{
+                console.log(par)
+            }
+            //ou
+            const testes2 = (pr)=>{
+                console.log('ola mundo')
+            }
+
+            testes1('ola');
+            testes2();
+            
+            //===================================
+            
+            const testes3 = (par)=>{
+                par();
+            }
+
+            testes3('tesxto',()=>{
+                alert('ola mundo')
+            });
+            
+        </script>
+    </body>
+</html>
