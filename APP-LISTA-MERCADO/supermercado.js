@@ -18,10 +18,10 @@ document.querySelector('input[type=submit')
     */
 
     let listaProdutos = document.querySelector('.lista-produtos');
-    let soma = 0;
+    let soma = 0; 
     listaProdutos.innerHTML = ''
     itens.map(function(val){
-        soma+=parseFloat(val.valor);
+         soma+=parseFloat(val.valor);
         listaProdutos.innerHTML+=`
         <div class="lista-produtos-single">
             <h3>`+val.nome+`</h3>
